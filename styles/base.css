@@ -1,3 +1,6 @@
+body {
+    background-image: url('images\homepage-background.jpg');
+  }
 .temple{
     width: 50%;
     height: auto;
