@@ -1,8 +1,23 @@
+header{
+    background-color: rgb(132, 132, 255);
+    height: 16em;
+}
+#Homepage-Name{
+    font-size: 5em;
+}
+#link{
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    background-color: aliceblue;
+}
 body{
     background-image: url('../images/homepage-background.jpg');
 }
-.temple{
-    width: 50%;
-    height: auto;
-    margin-left: 25%;
-}
+aside { 
+    border: 1px solid #eee;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 3;
+  }
