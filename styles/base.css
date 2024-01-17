@@ -1,23 +1,130 @@
-header{
-    background-color: rgb(132, 132, 255);
-    height: 16em;
+#profile-picture {
+    width: 100px;
+    height: 100px;
+    grid-column: 1; /* Set the grid column to 2 to center it in the second column */
+    margin: auto; /* Add margin:auto to center within the column */
 }
-#Homepage-Name{
-    font-size: 5em;
+#Homepage-Name {
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    grid-row: 1;
+    grid-column: 2/4;
+    font-family: 'Lato', sans-serif;
+    }
+
+.grid_container {
+    display: grid;
+    height: 10em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
 }
-#link{
-    margin-top: 1em;
-    margin-right: 1em;
-    margin-left: 1em;
-    margin-bottom: 1em;
-    background-color: aliceblue;
+
+.home_container {
+    background-color: cyan;
+    color: #eee;
 }
-body{
-    background-image: url('../images/homepage-background.jpg');
+
+.black_container {
+    background-color: black;
+    color: white;
+}
+
+header {
+    height: 10em;
+    background-color: rgb(156, 156, 255);
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.home_container{
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #b5c4ff; /* Green background color */
+    color: white; /* White text color */
+    cursor: pointer;
+    grid-column: 1/2;
+    font-family: 'Lato', sans-serif;
+}
+.chamber_container
+{
+    grid-row: 2;
+    grid-column: 1/2;
+}
+.site_plan{
+    grid-row: 3;
+    grid-column: 1/2;
+    background-color: black;
+}
+.link{
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000000; /* Green background color */
+    color: white; /* White text color */
+    cursor: pointer;
+
 }
 aside { 
     border: 1px solid #eee;
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 3;
+  }
+
+  .title{
+    font-size: 8pt;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-decoration: underline;
+  }
+  .card{
+    height: auto;
+    margin-top: 1em;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+  }
+  .blue_div{
+    background-color: rgb(156, 156, 255);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    border: 1px solid #000000;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .container{
+    border: 1px solid black;
+    margin-bottom: 20px;
+
+  }
+    footer{
+        font-family: 'Lato', sans-serif;
+        background-color: rgb(162, 162, 221);
+        padding: 2em;
+  }
+  .usa-photo{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+  }
+  footer p{
+    text-align: center;
+    font-size: 15pt;
+
   }
