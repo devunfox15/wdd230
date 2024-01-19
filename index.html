@@ -1,87 +1,88 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Devun Durst - WDD 230 - Web Frontend Development</title>
-    <meta name="author" content="Devun Durst"/>
-    <meta 
-        name="description"
-        content="WDD 230 - Web Frontend Development Devun Durst - course assignment portal"/>
+    <meta name="author" content="Devun Fox Durst">
+    <meta name="description" content="WDD 230 - Web Frontend Development Devun Durst - course assignment portal">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    
-    
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="grid_container">
-        <img id="profile-picture" src="./images/devun-profile-picture.jpg" alt="A piture of the site frontend developer">
-    <span id="Homepage-Name"> Devun Durst</span>
-    </div>
-</header>
+      <div class="grid_container">
+        <img class="profile-picture" src="./images/devun-profile-picture.jpg" alt="A piture of the site frontend developer">
+        <span class="Homepage-Name"> Devun Durst</span>
+      </div>
+    </header>
     <nav>
-        <a class="home_container">Home</a>
-        <a class="link" class="chamber_container" href="">Chamber</a>
-        <a class="link" class="site_plan" href="">Site Plan</a>
-        <a class="link" href="">Form</a>
+      <ul>
+        <li><a class="link">Home</a></li>
+        <li><a class="link" href="">Chamber</a></li>
+        <li><a class="link" href="">Site Plan</a></li>
+        <li><a class="link" href="">Form</a></li>
+      </ul>
     </nav>
-    
+
     <main>
-        <div class="title">
+      <div class="title">
         <h1>WDD 230: Web Frontend Developement</h1>
+      </div>
+      <div class="flex-container">
+      <section class="card">
+        <div class="blue_div">
+          <h2>Learning Activities</h2>
         </div>
-        
-        <section class="card">
-            <div class="blue_div">
-                <h2>Learning Activities</h2>
-            </div>
-            <div class="container">
-                <ul> 
-                    <li>week 01:
-                        <a href="/week01/holygrail.html">layout</a>
-                        <a href="/week01/media-query.html">Media Query</a>
-                        <a href="">Js pen</a>
-                    </li>
-                    <li>week 02:</li>
-                    <li>week 03:</li>
-                    <li>week 04:</li>
-                    <li>week 05:</li>
-                    <li>week 06:</li>
-                    <li>week 07:</li>
-                </ul>
-            </div>
-        </section>
-        
-        <section class="card">
-            <div class="blue_div">
-                <h2>Information</h2>
-            </div>
-            <div class="container">
-                <ul>
-                <li>Information place holder </li>
-                <li>Weather placeholder</li>
-                <li>number of visits to the page</li>
-            </ul>
-            </div>
-        </section>
+        <div class="container">
+          <ul>
+            <li>
+              week 01:
+              <a href="/week01/holygrail.html">layout</a>
+              <a href="/week01/media-query.html">Media Query</a>
+              <a href="">Js pen</a>
+            </li>
+            <li>week 02:</li>
+            <li>week 03:</li>
+            <li>week 04:</li>
+            <li>week 05:</li>
+            <li>week 06:</li>
+            <li>week 07:</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="blue_div">
+          <h2>Information</h2>
+        </div>
+        <div class="container">
+          <ul>
+            <li>Information place holder</li>
+            <li>Weather placeholder</li>
+            <li>number of visits to the page</li>
+          </ul>
+        </div>
+      </section>
+    </div>
     </main>
 
     <footer>
-        <p id="dateTime"></p>
-        <p id="author"></p>
-        <p id="country"></p>
-        <img class="usa-photo" src="./images/united-states.png" alt="flag" >
-        <br>
-        <p>last modified:</p>
-        <p id="modifiedTime"></p>
+      <div class="footer-info">
+      <h3 id="dateTime">Javascript date</h3>
+      <h3 id="author">author of Site</h3>
+      <h3 id="country">country of author</h3>
+      <img class="usa-photo" src="./images/united-states.png" alt="flag">
+    </div>
+      <p id="modifiedTime"></p>
     </footer>
 
     <script src="scripts/index.js"></script>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/lastMotified.js"></script>
-</body>
+  </body>
 </html>

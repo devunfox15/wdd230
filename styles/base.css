@@ -1,16 +1,27 @@
-#profile-picture {
-    width: 100px;
-    height: 100px;
+.profile-picture {
+    width: 120px;
+    height: 120px;
     grid-column: 1; /* Set the grid column to 2 to center it in the second column */
     margin: auto; /* Add margin:auto to center within the column */
+    border-radius: 30px;
+    padding: 3px 4px;
+    background-color: #eee;
+    border: 3px solid #000000;
 }
-#Homepage-Name {
+.Homepage-Name {
     margin: auto;
     text-align: center;
     font-size: 2em;
+    font-style:italic;
+    font-weight: 800;
     grid-row: 1;
     grid-column: 2/4;
     font-family: 'Lato', sans-serif;
+    color: rgb(188, 35, 202);
+    border: 3px solid #000000;
+    border-radius: 50px;
+    background-color: #b5c4ff;
+    padding: 10px;
     }
 
 .grid_container {
@@ -21,7 +32,7 @@
 }
 
 .home_container {
-    background-color: cyan;
+    background-color: rgb(131, 212, 212);
     color: #eee;
 }
 
@@ -35,12 +46,29 @@ header {
     background-color: rgb(156, 156, 255);
     font-family: 'Lato', sans-serif;
 }
+body{
+  background-color: #F5F5F5;
+}
 nav{
+  background-color: #b5c4ff;
+}
+nav ul{
+  padding: 0;
+  margin: 0;
+  border: 5px double rgb(188, 35, 202);
+}
+nav ul li{
+    margin: 10px;
     display:grid;
+    list-style-type: none;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     font-family: 'Lato', sans-serif;
+}
 
+nav a:hover {
+	text-decoration:underline;
+  background-color: rgb(188, 35, 202);
 }
 
 .home_container{
@@ -48,8 +76,8 @@ nav{
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    background-color: #b5c4ff; /* Green background color */
-    color: white; /* White text color */
+    background-color: rgb(156, 156, 255); 
+    color: white; 
     cursor: pointer;
     grid-column: 1/2;
     font-family: 'Lato', sans-serif;
@@ -69,10 +97,9 @@ nav{
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    background-color: #000000; /* Green background color */
-    color: white; /* White text color */
+    background-color: #000000;
+    color: white; 
     cursor: pointer;
-
 }
 aside { 
     border: 1px solid #eee;
@@ -91,12 +118,14 @@ aside {
     padding-left: 2px;
     padding-right: 2px;
     text-decoration: underline;
+    color: rgb(188, 35, 202);
   }
   .card{
     height: auto;
     margin-top: 1em;
     background-color: white;
     font-family: 'Lato', sans-serif;
+    color: rgb(188, 35, 202);
   }
   .blue_div{
     background-color: rgb(156, 156, 255);
@@ -127,4 +156,7 @@ aside {
     text-align: center;
     font-size: 15pt;
 
+  }
+  .footer-info{
+    text-align: center;
   }
