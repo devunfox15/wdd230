@@ -23,8 +23,6 @@
     .grid_container{
         display: grid;
         height: 10em;
-        /* margin-left: 20%;
-        margin-right: 20%; */
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
        
@@ -34,8 +32,8 @@
         padding: 2em 3em;
         text-align: center;
         text-decoration: none;
-        background-color: #000000; /* Green background color */
-        color: white; /* White text color */
+        background-color: #000000; 
+        color: white; 
         cursor: pointer;
     }
     .title{
@@ -51,8 +49,8 @@
       .profile-picture {
         width: 150px;
         height: 150px;
-        grid-column: 1; /* Set the grid column to 2 to center it in the second column */
-        margin: auto; /* Add margin:auto to center within the column */
+        grid-column: 1; 
+        margin: auto; 
         border-radius: 30px;
         padding: 3px 4px;
         background-color: #eee;
@@ -98,7 +96,6 @@
         }
         .container{
             min-height: 200px; 
-            /* this adjusts the container for the information and learning activity space */
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
         .blue_div{
