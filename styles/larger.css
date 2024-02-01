@@ -44,7 +44,6 @@
         padding-bottom: 2em;
         padding-left: 2px;
         padding-right: 2px;
-        text-decoration: underline;
       }
       .profile-picture {
         width: 150px;
@@ -75,13 +74,13 @@
     .title{
             font-size: 1em;
             font-family: 'Lato', sans-serif;
-            text-align: left;
+            text-align: center;
             margin: 0px 0px 0px 0px;
-            padding-top: 0em;
-            padding-bottom: 0em;
             padding-left: 2px;
             padding-right: 2px;
-            text-decoration: underline;
+        }
+        .title h1{
+            border-bottom:rgb(188, 35, 202) 2px solid;
         }
         .flex-container{
             display: flex;
