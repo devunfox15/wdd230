@@ -12,9 +12,30 @@
 	nav ul li {
 		flex: 1 1 100%;
 	}
+    #myBtn{
+        display: none;
+    }
+    ul.menuLinks, ul.menuLinks.open{
+        display: flex;
+        justify-content: flex-end;
+    }
+    ul.menuLinks a:hover{
+        text-decoration:underline;
+        background-color: rgb(188, 35, 202)
+    }
+    nav ul.menuLinks li a.current-menu-item, nav ul.menuLinks.open li a.current-menu-item{
+        padding: 10px 40px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #85138F;
+        color: white; 
+        cursor: pointer;
+    }
+
     main{
         height: auto;
     }
+
     .home_container {
         background-color: rgb(131, 212, 212);
         color: #eee;
@@ -36,6 +57,8 @@
         color: white; 
         cursor: pointer;
     }
+
+     /* css for the body is below  */
     .title{
         font-size: 8pt;
         font-family: 'Lato', sans-serif;
@@ -90,8 +113,7 @@
             margin-left: 4em;
             margin-right: 4em;
             width: 1000px;
-            height: auto;
-            background-color: #F5F5F5;
+            height: auto;   
         }
         .container{
             min-height: 200px; 

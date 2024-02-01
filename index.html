@@ -29,15 +29,19 @@
     </header>
     <div id="mode"></div>
     <nav>
-      <ul>
-        <li><a class="link" href="./wdd230/index.html">Home</a></li>
+      <button id="myBtn"></button>
+      <ul class="menuLinks">
+        <li><a class="current-menu-item" class="link" href="./wdd230/index.html">Home</a></li>
         <li><a class="link" href="">Chamber</a></li>
         <li><a class="link" href="./week01/chamber-site-plan.html">Site Plan</a></li>
         <li><a class="link" href="">Form</a></li>
       </ul>
+      <div class="logo-container">
+      <img src="images/dark.svg" alt="dark mode" id="darkBtn">
+    </div>
     </nav>
 
-    <main>
+    <main id="main">
       <div class="title">
         <h1>WDD 230: Web Frontend Developement</h1>
       </div>
@@ -94,5 +98,7 @@
     <script src="scripts/index.js"></script>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/lastMotified.js"></script>
+    <script src="/scripts/darkMode.js"></script>
+    <script src="/scripts/hamburgerMenu.js"></script>
   </body>
 </html>
