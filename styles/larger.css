@@ -59,12 +59,11 @@
     }
 
      /* css for the body is below  */
-    .title{
-        font-size: 8pt;
+    #title{
         font-family: 'Lato', sans-serif;
         text-align: center;
-        padding-top: 2em;
-        padding-bottom: 2em;
+        border-bottom:rgb(188, 35, 202) 2px solid;
+        padding-top: 1em;
         padding-left: 2px;
         padding-right: 2px;
       }

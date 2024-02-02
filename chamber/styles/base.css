@@ -1,4 +1,119 @@
+body {
+    font-family: 'Merriweather', serif;
+    margin: 30px 0px 30px 0px;
+    background-color: #4E6E5D;
+    text-align: center;
+}
+header{
+    display: block;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    background-color: #4DA167;
+    position: relative;
+    width: 100%;
+    color: #CFCFCF;
+}
+
 header nav a {
-    background-color: red;
+    color: #CFCFCF;
+    cursor: pointer;
+    background-color: #4D5057;
+}
+
+.button-design{
+background-color: #4D5057 ;
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 8px;
+transition: background-color 0.3s;
+}
+nav ul.menu-dirrectory{
     text-decoration: none;
+    list-style: none;
+}
+ul.menu-dirrectory {
+    display: none;
+    list-style-type: none;
+  }
+  
+  ul.menu-dirrectory.open {
+    display: block;
+  }
+/* Make sure to include styles for the open state------------------------------------------------------ */
+
+#myBtn::before {
+    content: "\2630";
+  }
+  
+  #myBtn.open::before {
+    content: none;
+  }
+  
+  #myBtn.open::after {
+    content: "X";
+    background-color:#4DA167;
+  }
+  
+  #myBtn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    text-align: left;
+    position: absolute;
+    top: 0px;
+    left: 15px;
+  }
+/* start of the main css ---------------------------------------------------------------------------------- */
+
+.events-container {
+    width: 80%;
+    height: 20em;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    color: #CFCFCF;
+}
+.event-container{
+    border: 2px solid #3498db; /* Border color for the colored box */
+    color: #CFCFCF;
+
+    margin-bottom: 8px; /* Spacing between events */
+}
+.event-container a {
+    text-decoration: none;
+    color: #CFCFCF;
+ /* Text color for the clickable link */
+}
+
+.event-container:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
+
+
+
+
+
+
+.about-Our-Chamber{
+    background-color: #4DA167;
+    padding: 10px;
+    border: 3px solid #4D5057;
+    margin: 0 auto;
+    width: 80%;
+}
+.about-Our-Chamber img{
+    width: 100%;
+}
+
+footer{
+    height: 100px
 }

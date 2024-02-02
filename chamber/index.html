@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber</title>
-    <title>Devun Durst - WDD 230 - Web Frontend Development</title>
+    <title>Concord Chamber of Commerce Site</title>
     <!--  Essential META Tags -->
     <meta name="author" content="Devun Fox Durst">
-    <meta name="description" content="WDD 230 - Web Frontend Development Devun Durst - chamber of commerece Project">
+    <meta name="description" content="Chamber of Commerece Project designed after one in my community, planned implemented, and created for a personal Project">
     <meta property="og:title" content="Devun Durst chamber site">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://savemountdiablo.org/wp-content/uploads/2022/03/Mount-Diablo-Al-Johnson-928x522.jpg">
     <meta property="og:url" content="https://devunfox15.github.io/wdd230/">
-    <!-- we need to add our marrier weather font-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -21,17 +23,54 @@
 <body>
     <header>
         <nav>
-            <a href="">Home</a>
-            <a href="">Directory</a>
-            <a href="">Discover</a>
-            <a href="">join</a>
+            <button id="myBtn"></button>
+            <ul class="menu-dirrectory">
+            <li><a class="button-design" href="">Home</a></li>
+            <li><a class="button-design" href="">Directory</a></li>
+            <li><a class="button-design" href="">Discover</a></li>
+            <li><a class="button-design" href="">join</a></li>
+        </ul>
         </nav>
     </header>
+
     <main>
-        <img src="" alt="opening photo" class="hero-image">
-    </main>
+        <div>
+        <img src="" alt="opening photo 1" class="top-main-imgs">
+        <img src="" alt="opening photo 2" class="top-main-imgs">
+        <img src="" alt="opening photo 3" class="top-main-imgs">
+        </div>
+        <section>
+        <h3>Unlocking Opportunities, Fostering Growth, Discover the Power of Partnership and Prosperity</h3>
+        <div class="about-Our-Chamber">
+            <img src="./images/chamber-commere-building.png" alt="building">
+            <div class="our-Mission-Textbox">
+                <p>Our mission is to cultivate an environment where our members can operate more successfully. We aim to create a climate that enables businesses to realize the benefits of increased economic activity and heightened community involvement. 
+                    From the smallest enterprises to the most established corporations, the Concord Chamber of Commerce is committed to supporting our members at every stage of their journey.
+                    Through strategic partnerships, advocacy, and a range of valuable resources, we empower our members to thrive. Join us in shaping a future where businesses prosper, communities thrive, and the Concord region stands as a beacon of economic vitality.</p>
+            </div>
+        </div>
+    </section>
+        <h3>upcoming events</h3>
+        <div class="events-container" id="eventsContainer">
+           
+          </div>
+        <div class="text-Box">
+            <p>
+                Getting involved with the Chamber of Commerce community through events and other activities can really help your business. The chamber is like a big group of local businesses and people working together. When you join their events, you get to meet important people, like potential clients and partners. Talking with others at these events can help you come up with new ideas for your business. Also, being part of community activities shows that you care about your local area, making your business look trustworthy and reliable. Getting noticed in these events can boost your business's reputation and make more people aware of what you do. So, by being active with the Chamber of Commerce, you're not just growing your network, you're also becoming a part of a supportive community that can help your business succeed.</p>
+        </div>
+        <div class="calling-Action">
+<!-- background picture needs to go behind the text -->
+            <h1>Ready to Elevate Your Business?</h1>
+        </div>
+        </main>
     <footer>
+        <p>Devun Durst</p>
+        <p>Project for WDD 230 course @brighamYoungUniversityIdaho</p>
+        <p id="modifiedTime"></p>
 
     </footer>
+    <script src="./scripts/scrollingEvents.js"></script>
+    <script src="./scripts/home-nav.js"></script>
+    <script src="./scripts/last-modified.js"></script>
 </body>
 </html>
