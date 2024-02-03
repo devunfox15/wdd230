@@ -22,6 +22,10 @@
 </head>
 <body>
     <header>
+        <div>
+            <img class="Concord-logo" src="./images/GCCC-Logo-white.png" alt="Concord"  width="100%" height="auto">
+            <img class="mountain-img" src="./images/mountain.jpg" width="80%" height="auto">
+        </div>
         <nav>
             <button id="myBtn"></button>
             <ul class="menu-dirrectory">
@@ -29,28 +33,38 @@
             <li><a class="button-design" href="">Directory</a></li>
             <li><a class="button-design" href="">Discover</a></li>
             <li><a class="button-design" href="">join</a></li>
-        </ul>
+            </ul>
         </nav>
-    </header>
+        </header>
 
     <main>
-        <div>
-        <img src="" alt="opening photo 1" class="top-main-imgs">
-        <img src="" alt="opening photo 2" class="top-main-imgs">
-        <img src="" alt="opening photo 3" class="top-main-imgs">
+        <div class="photo-frames">
+            <h3>Experiences that will change your life!</h3>
+            <img src="./images/local-market.png" alt="opening photo 3" class="top-main-imgs" width="300" length="auto">
         </div>
+        
+        <div class="photo-frames">
+            <h3>Tips and guidelines from other business nearby</h3>
+            <img src="./images/support-businesses.png" alt="opening photo 2" class="top-main-imgs" width="300" length="auto">
+        </div>
+        
+        <div class="photo-frames">
+            <h3>Create community in Concord Chamber Today!</h3>
+            <img src="./images/community.jpg" alt="opening photo 1" class="top-main-imgs" width="300" length="auto">
+        </div>
+        
         <section>
-        <h3>Unlocking Opportunities, Fostering Growth, Discover the Power of Partnership and Prosperity</h3>
+        <h1 class="quote-message">"Unlock New Opportunities, Foster Growth, and Discover the Power of Partnership and Prosperity."</h1>
         <div class="about-Our-Chamber">
+            <p>Our mission is to cultivate an environment where our members can operate more successfully. We aim to create a climate that enables businesses to realize the benefits of increased economic activity and heightened community involvement. </p>
             <img src="./images/chamber-commere-building.png" alt="building">
             <div class="our-Mission-Textbox">
-                <p>Our mission is to cultivate an environment where our members can operate more successfully. We aim to create a climate that enables businesses to realize the benefits of increased economic activity and heightened community involvement. 
-                    From the smallest enterprises to the most established corporations, the Concord Chamber of Commerce is committed to supporting our members at every stage of their journey.
-                    Through strategic partnerships, advocacy, and a range of valuable resources, we empower our members to thrive. Join us in shaping a future where businesses prosper, communities thrive, and the Concord region stands as a beacon of economic vitality.</p>
+                <p>From the smallest enterprises to the most established corporations, the Concord Chamber of Commerce is committed to supporting our members at every stage of their journey.</p>
             </div>
         </div>
     </section>
-        <h3>upcoming events</h3>
+    <section class="events-section">
+        <h3>Upcoming Events</h3>
         <div class="events-container" id="eventsContainer">
            
           </div>
@@ -58,16 +72,18 @@
             <p>
                 Getting involved with the Chamber of Commerce community through events and other activities can really help your business. The chamber is like a big group of local businesses and people working together. When you join their events, you get to meet important people, like potential clients and partners. Talking with others at these events can help you come up with new ideas for your business. Also, being part of community activities shows that you care about your local area, making your business look trustworthy and reliable. Getting noticed in these events can boost your business's reputation and make more people aware of what you do. So, by being active with the Chamber of Commerce, you're not just growing your network, you're also becoming a part of a supportive community that can help your business succeed.</p>
         </div>
-        <div class="calling-Action">
+    </section>
+        <div id="calling-Action">
 <!-- background picture needs to go behind the text -->
             <h1>Ready to Elevate Your Business?</h1>
         </div>
         </main>
     <footer>
-        <p>Devun Durst</p>
-        <p>Project for WDD 230 course @brighamYoungUniversityIdaho</p>
+        <div class="foot-div">
         <p id="modifiedTime"></p>
-
+        <p>Designer of the page Devun Durst</p>
+        <p>Project for WDD 230 course @brighamYoungUniversityIdaho</p>
+        </div>
     </footer>
     <script src="./scripts/scrollingEvents.js"></script>
     <script src="./scripts/home-nav.js"></script>

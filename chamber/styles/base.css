@@ -1,8 +1,11 @@
+html{
+  background-color: 4DA167;
+}
 body {
     font-family: 'Merriweather', serif;
-    margin: 30px 0px 30px 0px;
-    background-color: #4E6E5D;
+    background-color: #4DA167;
     text-align: center;
+    margin: 0;
 }
 header{
     display: block;
@@ -10,8 +13,13 @@ header{
     grid-template-rows: 1fr;
     background-color: #4DA167;
     position: relative;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     color: #CFCFCF;
+}
+header div{
+  border: 10px ridge  #CFCFCF;
+
 }
 
 header nav a {
@@ -24,16 +32,17 @@ header nav a {
 background-color: #4D5057 ;
 border: none;
 color: white;
+width: 100%;
 padding: 10px 20px;
-text-align: center;
 text-decoration: none;
 display: inline-block;
 font-size: 16px;
-margin: 4px 2px;
+margin: 0px 0px 5px -40px;
 cursor: pointer;
-border-radius: 8px;
 transition: background-color 0.3s;
+list-style-type: none;
 }
+
 nav ul.menu-dirrectory{
     text-decoration: none;
     list-style: none;
@@ -45,6 +54,7 @@ ul.menu-dirrectory {
   
   ul.menu-dirrectory.open {
     display: block;
+    z-index: 2;
   }
 /* Make sure to include styles for the open state------------------------------------------------------ */
 
@@ -69,10 +79,30 @@ ul.menu-dirrectory {
     width: 44px;
     text-align: left;
     position: absolute;
-    top: 0px;
-    left: 15px;
+    top: 113px;
+    left: 8px;
+
   }
 /* start of the main css ---------------------------------------------------------------------------------- */
+main{
+  margin: 0 auto;
+  margin-top: 3em;
+  max-width: 90%;
+}
+.quote-message{
+  color: #f0f0f0;
+  font-variant: normal;
+  background-color: #4D5057;
+  border-radius: 100%;
+  padding: 85px 0px;
+  border: 4px solid #f0f0f0;
+}
+section h3{
+  color: #f0f0f0;
+  font-weight: 900;
+  text-decoration:solid;
+  border-bottom:#f0f0f0 1px solid;
+}
 
 .events-container {
     width: 80%;
@@ -83,14 +113,13 @@ ul.menu-dirrectory {
     color: #CFCFCF;
 }
 .event-container{
-    border: 2px solid #3498db; /* Border color for the colored box */
-    color: #CFCFCF;
-
+    border: 2px solid #CFCFCF; /* Border color for the colored box */
+    background-color: #CFCFCF;
     margin-bottom: 8px; /* Spacing between events */
 }
 .event-container a {
     text-decoration: none;
-    color: #CFCFCF;
+    color: #4DA167;
  /* Text color for the clickable link */
 }
 
@@ -98,9 +127,23 @@ ul.menu-dirrectory {
     background-color: #f0f0f0; /* Background color on hover */
 }
 
+.photo-frames{
+  width: fit-content;
+  border: 8px ridge #f0f0f0;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.photo-frames:hover{
+  transform: scale(1.1); /* Increase the scale factor for a slight growth effect */
+}
 
-
-
+.events-section{
+  margin-top: 5em;
+  border: 5px ridge #f0f0f0;
+}
 
 
 .about-Our-Chamber{
@@ -113,7 +156,49 @@ ul.menu-dirrectory {
 .about-Our-Chamber img{
     width: 100%;
 }
+#calling-Action{
+  margin-top: 2em;
+  height: 100px;
+  background-image: url(../images/concord-activity-2.png);
+  background-size: cover; /* This property ensures that the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; 
+  color: #fff;
+  font-size: 13pt;
+  text-align:center;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+#calling-Action:hover {
+  transform: scale(1.1); /* Increase the scale factor for a slight growth effect */
+}
 
-footer{
-    height: 100px
+#calling-Action h1{
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+footer {
+  color: white;
+  font-weight: 800;
+  min-height: 200px; /* Change to min-height to allow auto margin to work */
+  background-color: #4D5057;
+  background-image: url(../images/forest-leaves.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  margin-top: 3em;
+}
+
+.foot-div {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* Repeat for 3 rows */
+}
+
+.foot-div p {
+  margin: 0;
+  padding: 5px;
 }
