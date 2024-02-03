@@ -119,7 +119,7 @@ main{
   font-variant: normal;
   background-color: #4D5057;
   border-radius: 100%;
-  padding: 85px 0px;
+  padding: 37px 0px;
   border: 4px solid #f0f0f0;
 }
 section h3{
@@ -174,16 +174,18 @@ section h3{
   margin-top: 5em;
   border: 5px ridge #f0f0f0;
 }
+.chamber-div{
+  border: 3px solid rgb(77, 80, 87);
+}
 
 
 .about-Our-Chamber{
     background-color: #4DA167;
     padding: 10px;
-    border: 3px solid #4D5057;
     margin: 0 auto;
     width: 80%;
 }
-.about-Our-Chamber img{
+.about-Our-Chamber-img img{
     width: 100%;
     max-height: fit-content;
 }

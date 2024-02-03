@@ -96,6 +96,12 @@
           }
 
             /* --------------------------------------------------------------- */
+          main h4{
+            text-align: left;
+            margin-left: 15%;
+            font-size: 20pt;
+          }
+
           #calling-Action{
     
             margin: 0 auto;
@@ -121,4 +127,54 @@
             font-weight: 900;
             font-size: 1.5em;
           }
+          .chamber-div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+          }
+          .about-Our-Chamber{
+            grid-column: 2/3;
+            grid-row: 1;
+            padding: 100px 41px;
+            background-color: #f0f0f0;
+            border: 10px solid #4D5057;
+            
+        }
+        .about-Our-Chamber-img{
+            padding: 50px 15px;
+            grid-column: 1/2;
+            grid-row: 1;
+            height:auto;
+        }
+        .events-container {
+            display: block;
+            width: 80%;
+            height: 39em;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+            color: #CFCFCF;
+        }
+        .events-section{
+            display: grid;
+            margin-top: 0;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            padding: 0px 0px;
+            margin-bottom: 5em;
+        }
+        .text-Box{
+            grid-column: 2/3;
+            grid-row: 1;
+            padding: 30px 0px;
+            border: 10px solid #4D5057;
+            
+        }
+        .event-place-holder{
+            padding: 50px 15px;
+            grid-column: 1/2;
+            grid-row: 1;
+           max-height: 400px;
+        }
+
 }
