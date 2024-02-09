@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Devun Fox Durst">
+    <meta name="description" content="Responsive Images">
+    <meta property="og:title" content="Devun Durst - activity: responsive-images">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://savemountdiablo.org/wp-content/uploads/2022/03/Mount-Diablo-Al-Johnson-928x522.jpg">
+    <meta property="og:url" content="https://devunfox15.github.io/wdd230/week03/responsive-images.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <title>Responsive Images</title>
+</head>
+<body>
+<main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="./images/hero-small.webp">
+                <source media="(max-width:1000px)" srcset="./images/hero-medium.webp">
+                <img src="./images/hero-large.webp" alt="Image Settings" width="1500" height="750">
+            </picture>
+        </div>
+</main>
+    
+</body>
+</html>
