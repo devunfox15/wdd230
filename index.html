@@ -23,7 +23,7 @@
   <body>
     <header>
       <div class="grid_container">
-        <img class="profile-picture" src="./images/devun-durst.webp" alt="A piture of the site frontend developer">
+        <img class="profile-picture" src="./images/devun-durst.webp" loading="lazy" alt="A piture of the site frontend developer">
         <span class="Homepage-Name"> Devun Durst</span>
       </div>
     </header>
@@ -47,49 +47,57 @@
           <source media="(max-width: 500px)" srcset="./images/hero-smaller.webp">
           <source media="(max-width: 750px)" srcset="./images/hero-small.webp">
           <source media="(max-width: 1000px)" srcset="./images/hero-sm-med.webp">
-          <img src="./images/hero-large.webp" alt="Image Settings">
+          <img src="./images/hero-large.webp" alt="Image Settings" loading="lazy">
         </picture>
          <span>Sacramento Temple</span>
       </div>
       <h1 id="title"> WDD 230: Web Frontend Developement</h1>
       <div class="flex-container">
-      <section class="card">
-        <div class="blue_div">
-          <h2>Learning Activities</h2>
-        </div>
-        <div class="container">
-          <ul>
-            <li>
-              week 01:
-              <a href="./week01/holygrail/holygrail.html">layout</a>
-              <a href="./week01/media-query/media-query.html">Media Query</a>
-              <a href="https://codepen.io/devunfox15/pen/rNRWyYG">Js pen</a>
-            </li>
-            <li>week 02: <a href="./week02/design.html">Design Principal</a>
-                        <a href="https://codepen.io/devunfox15/pen/gOEXJwR?editors=0110">Responsive menu</a>
-                      <a href="./week02/bom.html">BOM Top Ten</a></li>
-            <li>week 03: <a href="week03/images/landscape.webp">WebP</a> <a href="./week03/lazyload.html"> 
-              <a href="./week03/bom.html">BOM Pt.2</a> lazyload</a> <a href="./week03/responsive-images.html">responsive-images activity</a></li>
-            <li>week 04:</li>
-            <li>week 05:</li>
-            <li>week 06:</li>
-            <li>week 07:</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="card">
-        <div class="blue_div">
-          <h2>Information</h2>
-        </div>
-        <div class="container">
-          <ul>
-            <li>Information place holder</li>
-            <li>Weather placeholder</li>
-            <li>number of visits to the page</li>
-          </ul>
-        </div>
-      </section>
+        <section class="card">
+          <div class="blue_div">
+            <h2>Learning Activities</h2>
+          </div>
+          <div class="container">
+            <ul>
+              <li>
+                week 01:
+                <a href="./week01/holygrail/holygrail.html">layout</a>
+                <a href="./week01/media-query/media-query.html">Media Query</a>
+                <a href="https://codepen.io/devunfox15/pen/rNRWyYG">Js pen</a>
+              </li>
+              <li>week 02: <a href="./week02/design.html">Design Principal</a>
+                          <a href="https://codepen.io/devunfox15/pen/gOEXJwR?editors=0110">Responsive menu</a>
+                        <a href="./week02/bom.html">BOM Top Ten</a></li>
+              <li>week 03: <a href="week03/images/landscape.webp">WebP</a> <a href="./week03/lazyload.html"> 
+                <a href="./week03/bom.html">BOM Pt.2</a> 
+                <a href="./week03/lazyload.html">lazyload</a> 
+                <a href="./week03/responsive-images.html">responsive-images activity</a>
+              </li>
+              <li>week 04:</li>
+              <li>week 05:</li>
+              <li>week 06:</li>
+              <li>week 07:</li>
+            </ul>
+          </div>
+        </section>
+        <section class="card">
+          <div class="blue_div">
+            <h2>Information</h2>
+          </div>
+          <div class="container">
+            <ul>
+              <li>Information place holder</li>
+              <li>Weather placeholder</li>
+              <li> <span>Number Of Visits: </span><span class ="visits"></span></li>
+            </ul>
+          </div>
+        </section>
+      </div> 
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119687.57080897817!2d-122.09542025268051!3d37.9735926758491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808560ac69c4cc85%3A0xe416004961fffef!2sConcord%2C%20CA!5e0!3m2!1sen!2sus!4v1708026020126!5m2!1sen!2sus" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
     </main>
 
@@ -98,7 +106,7 @@
       <h3 id="dateTime">Javascript date</h3>
       <h3 id="author">author of Site</h3>
       <h3 id="country">country of author</h3>
-      <img class="usa-photo" src="./images/united-states.png" alt="flag">
+      <img class="usa-photo" src="./images/united-states.webp" loading="lazy" alt="flag" width ="180" height="90">
     </div>
       <p id="modifiedTime"></p>
     </footer>
@@ -106,5 +114,6 @@
     <script src="./scripts/getDates.js"></script>
     <script src="./scripts/darkMode.js"></script>
     <script src="./scripts/hamburgerMenu.js"></script>
+    <script src="./scripts/getVisits.js"></script>
   </body>
 </html>
