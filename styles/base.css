@@ -10,6 +10,7 @@
 }
 .Homepage-Name {
     margin: auto;
+    width: auto;
     text-align: center;
     font-size: 2em;
     font-style:italic;
@@ -52,7 +53,35 @@ body{
 }
 main{
   height:max-content;
-  padding: 0em 1em 0em 1em
+}
+#hero-picture{
+  margin: 0 auto;
+  width: 90%;
+}
+.hero{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1em;
+}
+.hero img {
+  margin-top: 1em;
+  width: 90%;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.hero span{
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+  right:30%;
+  border: #D0C695 solid 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2px 5px;
+  font-weight: bold;
+  text-align: center;
 }
 #mode{
   position: absolute;
