@@ -34,25 +34,26 @@
         display: none;
     }
     nav ul.menu-dirrectory{
-        background-color: #3BC14A;
+        background-color: #4DA167;
         margin: 0 auto;
     }
     ul.menu-dirrectory, ul.menu-dirrectory.open {
         display: flex;
         justify-content:space-evenly;
-        width: 90%; /* Make the directory span the entire width */
+        width: 100%; /* Make the directory span the entire width */
         padding: 0; /* Remove default padding */
     }
     
     nav ul.menu-dirrectory li a.button-design, nav ul.menu-dirrectory.open li a.button-design {
-        padding: 44px; /* Adjust padding for responsiveness */
+        padding: 10px 44px; /* Adjust padding for responsiveness */
         width: auto; /* Allow the button width to adjust based on content */
         margin: 0 ; /* Add margin for spacing between buttons */
         text-decoration: none;
-        background-color: #3BC14A;
+        background-color: #4d5057 ;
         color: white;
         cursor: pointer;
         transition: transform 0.3s;
+        font-size: 30pt;
     
     }
     nav ul.menu-dirrectory li a.button-design:hover, nav ul.menu-dirrectory.open li a.button-design:hover {
@@ -64,7 +65,7 @@
         background-color: #4D5057 ;
         border: none;
         font-size: 16px;
-        margin: none;
+        margin: 0;
         cursor: pointer;
         transition: background-color 0.3s;
         list-style-type: none;
@@ -176,5 +177,80 @@
             grid-row: 1;
            max-height: 400px;
         }
+        /* -------------------------------------here is my discover page edits ------------- */
+
+}
+@media only screen and (min-width: 1235px) {
+    
+    #discover-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 0 auto;
+        color: #4D5057;
+        width: fit-content;
+        height: auto;
+    }
+
+    #discover-grid .top {
+        grid-column: 1/4;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 10px 0px;
+        margin: 0 auto;
+        text-align: center;
+        height: fit-content;
+        margin-bottom: 3em;
+    }
+
+    #discover-grid .left-side {
+        grid-column: 1;
+        grid-row: 2 / 4;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        margin: 0 auto;
+        margin-left: 2em;
+    }
+
+    #discover-grid .right-side {
+        grid-column: 2/5;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 0 auto;
+        height: fit-content;
+    }
+    #discover-grid .right-side picture img{
+        margin-top: 3em;
+        border: 2px solid #4E6E5D;
+        background-color: #4DA167;
+    }
+    .bottom {
+        margin-top: 2em;
+    }
+
+    #discover-grid h2 {
+        text-align: center;
+        background-color: #CFCFCF;
+    }
+
+    .bottom:hover span {
+        opacity: 1;
+    }
+
+    img {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    img:hover {
+        transform: scale(1.03);
+    }
+    .bottom span{
+        font-size: 30pt;
+    }
 
 }

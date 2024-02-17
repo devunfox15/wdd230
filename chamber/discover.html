@@ -20,30 +20,112 @@
     <link rel="stylesheet" href="./styles/larger.css">
     <link rel="icon" href="./images/favicon.ico">
 </head>
-<body>
+<body id="discover">
     <header>
         <div>
             <img class="Concord-logo" src="./images/GCCC-Logo-white.png" alt="Concord" >
-            <img class="mountain-img" src="./images/mountain.jpg">
+            <img class ="mountain-img" src="./images/Mountain-lg.webp" alt="Image Settings" loading="lazy">
         </div>
         <nav>
             <button id="myBtn"></button>
             <ul class="menu-dirrectory">
             <li><a class="button-design" href="../index.html">Home</a></li>
             <li><a class="button-design" href="">Directory</a></li>
-            <li><a class="button-design" href="./html/discover.html">Discover</a></li>
-            <li><a class="button-design" href="./html/join.html">join</a></li>
+            <li><a class="button-design" href="./discover.html">Discover</a></li>
+            <li><a class="button-design" href="./join.html">join</a></li>
             </ul>
         </nav>
         </header>
 
     <main>
-      
+        <h1>Discover</h1>
+        <!-- This is the top section -->
+        <div id="discover-grid">
+        <div class="top">
+            <picture>
+                <source media="(max-width: 500px)" srcset="./images/cali-neighborhood.webp">
+                <img src="./images/cali-neighborhood-big.webp" alt="Image Settings" loading="lazy">
+            </picture>
+            <div>
+                <h2>Concord Chamber of Commerce</h2>
+                <p>Welcome to the official Chamber of Commerce page for the city of Concord! We are dedicated to promoting economic growth, fostering community development, and supporting local businesses in Concord and beyond. As the premier business organization in the area, we strive to create a thriving environment where businesses can flourish and residents can enjoy an exceptional quality of life.</p>
+            </div>
+            <div id="sidebar-content"></div>
+        </div>
+        <!-- This is the left section -->
+        <div class="left-side">
+            <div class="calender">
+                <h3>Calendar</h3>
+                <div id="calendar"></div>
+            </div>
+            <div class="demographics">
+                <h3>Demographics</h3>
+                <p>Concord is a vibrant city with a diverse population that reflects the rich tapestry of cultures found throughout [State]. With a population of over [population number], Concord offers a dynamic market for businesses to tap into and a welcoming community for residents to call home.</p>
+            </div>
+            <div class="stat-data">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="./images/data-picture-sm.webp">
+                <img src="./images/data-picture-lg.webp" alt="Image Settings" loading="lazy">
+                </picture>
+                <h3>Statistical Data</h3>
+                <p>Business Climate: Concord boasts a robust business climate with a diverse range of industries driving economic growth. From technology and healthcare to manufacturing and retail, businesses of all sizes thrive in Concord's supportive ecosystem.</p>
+                <p>Workforce: Concord is home to a highly skilled and educated workforce, making it an attractive destination for businesses seeking top talent. With [percentage] of residents holding a bachelor's degree or higher, Concord offers a pool of skilled professionals ready to contribute to your company's success.</p>
+                <p>Consumer Spending: Concord's residents have significant purchasing power, with a median household income of $[Income]. This makes Concord an ideal market for businesses looking to tap into consumer spending and grow their customer base.</p>
+            </div>
+        </div>
+        <!-- This is the right section -->
+        <div class="right-side">
+            <div class="event-tab">
+            <h2>Events</h2>
+            <p>Concord offers an array of events and attractions that showcase the city's vibrant culture and unique character. From business networking events to community festivals, there's always something happening in Concord.</p>
+            </div>
+            <h3>Ride before dawn</h3>
+            <picture>
+                <source media="(max-width: 500px)" srcset="./images/bike-riding-sm.webp">
+                <img src="./images/bike-riding.webp" alt="Image Settings" loading="lazy">
+             </picture>
+             <h3>Hiking Mountain Diablo</h3>
+            <picture>
+                <source media="(max-width: 500px)" srcset="./images/hiking-mt-sm.webp">
+                <img src="./images/hiking-mt-lg.webp" alt="Image Settings" loading="lazy">
+            </picture>
+            <h3>Community Retreat</h3>
+            <picture>
+                <source media="(max-width: 500px)" srcset="./images/retreat-sm.webp">
+                <img src="./images/retreat-big.webp" alt="Image Settings" loading="lazy">
+            </picture>
+        </div>
+    </div>
+        <!-- This is the bottom section -->
+        <div class="bottom">
+            <span>Click here to Join the Community Today!</span>
+            <a href="./join.html">
+            <picture>
+                <source media="(max-width: 500px)" srcset="./images/join-today-sm.webp">
+                <source media="(max-width: 1000px)" srcset="./images/join-today-md.webp">
+                <img src="./images/join-today-lg.webp" alt="Image Settings" loading="lazy">   
+            </picture>
+            </a>
+        </div>
+        </main>
+    <footer>
+        <div class="resources">
+            <div>
+            <img src="./images/GCCC-Logo-stacked-white.png">
+            </div>
+        </div>
+        <div class="foot-div">
+        <p id="modifiedTime"></p>
+        <p>Devun Durst</p>
+        <p>WDD 230 course @brighamYoungUniversityIdaho</p>
+        </div>
     </footer>
     <p>copyright 2024 - City of Concord, California- All right reserved - Powered by <a href="https://devunfox15.github.io/">Devun Durst</a></p>
 
     <script src="./scripts/scrollingEvents.js"></script>
     <script src="./scripts/home-nav.js"></script>
     <script src="./scripts/last-modified.js"></script>
+    <script src="./scripts/calender.js"></script>
+    <script src="./scripts/side-board.js"></script>
 </body>
 </html>
