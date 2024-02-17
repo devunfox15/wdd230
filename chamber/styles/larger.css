@@ -53,7 +53,7 @@
         color: white;
         cursor: pointer;
         transition: transform 0.3s;
-        font-size: 30pt;
+        font-size: 20pt;
     
     }
     nav ul.menu-dirrectory li a.button-design:hover, nav ul.menu-dirrectory.open li a.button-design:hover {
