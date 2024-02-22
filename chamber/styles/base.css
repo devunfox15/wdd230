@@ -1,29 +1,38 @@
+:root{
+  --background-white: rgb(240, 240, 240);
+  --color-two: rgb(207, 207, 207);
+  --color-one: rgb(77, 80, 87);
+  --background-color-primary: rgb(77, 161, 103);
+  --hook-green: rgb(78, 110, 93) ;
+}
+.photos{
+  background-color: var(--hook-green);
+  height: 90em;
+}
 
 body {
     font-family: 'Merriweather', serif;
-    background-color: #4DA167;
     text-align: center;
-    margin: 0;
 }
 header{
     display: block;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 1fr;
-    background-color: #4D5057;
+    background-color: var(--color-one);
     position: relative;
     width: 100%;
     margin: 0 auto;
-    color: #CFCFCF;
+    color: var(--color-two);
 }
 header div{
-  border: 5px solid #CFCFCF;
+  border: 5px solid var(--color-two);
   height: min-content;
 }
 
 header nav a {
-    color: #CFCFCF;
+    color: var(--color-two);
     cursor: pointer;
-    background-color: #4D5057;
+    background-color:var(--color-one);;
 }
 header div {
   display: grid;
@@ -52,7 +61,7 @@ header div {
 }
 
 .button-design{
-background-color: #4D5057 ;
+background-color: var(--color-one);;
 border: none;
 color: white;
 width: 100%;
@@ -91,7 +100,7 @@ ul.menu-dirrectory {
   
   #myBtn.open::after {
     content: "X";
-    background-color:#4DA167;
+    background-color: var(--background-color-primary);
   }
   
   #myBtn {
@@ -109,45 +118,47 @@ ul.menu-dirrectory {
 /* start of the main css ---------------------------------------------------------------------------------- */
 main{
   margin: 0 auto;
-  margin-top: 3em;
-  max-width: 90%;
+  max-width: 95%;
+}
+body{
+  background-color: var(--background-white);
 }
 .quote-message{
-  color: #f0f0f0;
+  color: var(--background-white);
   font-variant: normal;
-  background-color: #4D5057;
+  background-color: var(--color-one);;
   border-radius: 100%;
   padding: 37px 0px;
-  border: 4px solid #f0f0f0;
+  border: 4px solid var(--background-white);
 }
 section h3{
-  color: #f0f0f0;
+  color:black;
   font-weight: 900;
   text-decoration:solid;
-  border-bottom:#f0f0f0 1px solid;
+  border-bottom:var(--background-white) 1px solid;
 }
 
 .events-container {
     width: 80%;
     height: 20em;
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: 1px solid var(--background-white);
     margin: 0 auto;
-    color: #CFCFCF;
+    color: var(--color-two);
 }
 .event-container{
-    border: 2px solid #CFCFCF; /* Border color for the colored box */
-    background-color: #CFCFCF;
+    border: 2px solid var(--color-two); /* Border color for the colored box */
+    background-color: var(--color-two);
     margin-bottom: 8px; /* Spacing between events */
 }
 .event-container a {
     text-decoration: none;
-    color: #4DA167;
+    color: var(--background-color-primary);
  /* Text color for the clickable link */
 }
 
 .event-container:hover {
-    background-color: #f0f0f0; /* Background color on hover */
+    background-color: var(--background-white); /* Background color on hover */
 }
 
 .framed-imgs{
@@ -156,29 +167,32 @@ section h3{
 }
 
 .photo-frames{
-  width: fit-content;
-  border: 8px ridge #f0f0f0;
+  border: 8px ridge var(--background-white);
   margin: 0 auto;
   margin-bottom: 3em;
   padding: 5px;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-.photo-frames:hover{
-  transform: scale(1.1); /* Increase the scale factor for a slight growth effect */
+  width: 85%;
 }
 
+.event-box
+{
+  margin-top: 1em;
+}
 .events-section{
-  margin-top: 5em;
-  border: 5px ridge #f0f0f0;
+  border: 5px ridge var(--background-white);
+ 
 }
 .chamber-div{
   border: 3px solid rgb(77, 80, 87);
+  background-color: var(--background-color-primary);
+}
+div .text-box h3 {
+  background-color: var(--background-white);
+  margin-top: 3em;
 }
 
-
 .about-Our-Chamber{
-    background-color: #4DA167;
+    background-color: var(--background-color-primary);
     padding: 10px;
     margin: 0 auto;
     width: 80%;
@@ -194,7 +208,7 @@ section h3{
   background-size: cover; /* This property ensures that the background image covers the entire container */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; 
-  color: #fff;
+  color: var(--background-white);
   font-size: 13pt;
   text-align:center;
   padding: 50px;
@@ -215,14 +229,14 @@ footer {
   color: white;
   font-weight: 800;
   min-height: 200px; /* Change to min-height to allow auto margin to work */
-  background-color: #4D5057;
+  background-color: var(--color-one);
   background-image: url(../images/forest-leaves.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: darken;
   margin-top: 3em;
-  border:5px solid #4D5057;
+  border:5px solid var(--color-one);
 }
 footer div img{
   margin-top: 1em;
@@ -244,8 +258,8 @@ footer div img{
 
 #discover{
 
-  background-color:#4DA167;
-  color: #4D5057;
+  background-color:var(--background-color-primary);
+  color: var(--color-one);
   margin: 0 auto;
   margin-top: 1em;
   width: 100%;
@@ -275,13 +289,13 @@ footer div img{
 }
 
 #discover-grid{
-  background-color: #CFCFCF;
-  color: #4D5057;
+  background-color: var(--color-two);
+  color: var(--color-one);
   margin: 0 auto;
   margin-top: 1em;
   width: 100%;
   height: auto;
-  border: 1px solid #4D5057;
+  border: 1px solid var(--color-one);
 }
 #discover-grid div{
   margin: 0 auto;
@@ -292,18 +306,18 @@ footer div img{
   margin-bottom: 1em;
 }
 #discover-grid div{
-  width: 90%;
+  width: 95%;
   margin-bottom: 1em;
 }
 #discover-grid div p{
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   margin-bottom: 1em;
 }
  #discover-grid .right-side img{
   margin-top: 5px;
-  border: 2px solid #4E6E5D;
-  background-color: #4DA167;
+  border: 2px solid var(--hook-green);
+  background-color: var(--background-color-primary);
  }
  #discover-grid .right-side h3{
   margin-bottom: 0;
@@ -311,22 +325,22 @@ footer div img{
 #discover main div.bottom picture img{
 margin-right: 1em;
 }
-.top{
-    border: 1px solid #4D5057;
+.top-main-img{
+    border: 1px solid var(--color-one);
     background-color:white;
     width: 90%;
     height:auto;
     margin: 0 auto;
 }
 .left-side{
-    border: 1px solid #4D5057;
+    border: 1px solid var(--color-one);
     background-color:white;
     width: 90%;
     height:auto;
     margin: 0 auto;
 }
 .right-side{
-  border: 1px solid #4D5057;
+  border: 1px solid var(--color-one);
   background-color:white;
   width: 90%;
   height:auto;
@@ -336,9 +350,9 @@ margin-right: 1em;
   width: 100%;
 }
 #sidebar-content {
-  background-color: #cfcfcf;
+  background-color: var(--color-two);
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--background-white);
   border-radius: 5px;
   font-size: 18px;
   line-height: 1.4;
@@ -357,9 +371,9 @@ table {
 th, td {
   padding: 5px;
   text-align: center;
-  border: 1px solid #ddd;
+  border: 1px solid var(--background-white);
   font-size: 14px;
 }
 th {
-  background-color: #f2f2f2;
+  background-color: var(--background-white);
 }
