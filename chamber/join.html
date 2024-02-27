@@ -29,21 +29,64 @@
         <nav>
             <button id="myBtn"></button>
             <ul class="menu-dirrectory">
-            <li><a class="button-design" href="../index.html">Home</a></li>
+            <li><a class="button-design" href="./index.html">Home</a></li>
             <li><a class="button-design" href="">Directory</a></li>
             <li><a class="button-design" href="./discover.html">Discover</a></li>
-            <li><a class="button-design" href="./join.html">join</a></li>
+            <li><a class="button-design" href="./join.html">Join</a></li>
             </ul>
         </nav>
         </header>
-
-    <main>
+            <main>      
+                <h1 class="join-h1">Join the Chamber of Commerce in Concord, CA</h1>
+                    <form method="get" action="./thankyou.html" class="wf1"> 
+                    <fieldset>
+                          <legend>Future Partner Information</legend>
+                          <Label>First Name* <input type="text" name="fname" id="fname" required></label>
+                          <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                          <label>Position<input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}" placeholder="Applicant title/Position" required></label>
+                          <label>Email* <input type="email" name="email" id="email" placeholder="user@example.com" required></label>
+                          <label>Phone <input type="tel" name="phone" id="phone" placeholder="5551234567" required></label>
+                          <label>Business/Organization <input type="url" name="website" placeholder="Name of your business" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Membership Information</legend>
+                          <div class="membership-level">
+                        <label>Select your Membership level:</label>
+                        <label><input type="radio" name="membership" value="NP Membership">NP Membership <span>(non-profit organizations & no membership fee)</span></label>
+                        <label><input type="radio" name="membership" value="intermediate">Bronze Membership <span>(a small membership fee)</span></label>
+                        <label><input type="radio" name="membership" value="advanced">Silver Membership <span>(a medium membership fee)</span></label>
+                        <label><input type="radio" name="membership" value="advanced">Gold Membership <span>(a large membership fee)</label>
+                            </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business/Organization Information</legend>
+                            <div>
+                                <label>Description of Business/Organization
+                                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your Description here..."></textarea></label>
+                            </div>
+                            <input type="hidden" name="timestamp" id="timestamp">
+                    </fieldset>
+                            <input type="submit" value="Become a Member now!" class="button">
+                    </form>
+            </main>
       
-    </footer>
+            <footer>
+                <div class="resources">
+                    <div>
+                    <img src="./images/GCCC-Logo-stacked-white.png">
+                    </div>
+                </div>
+                <div class="foot-div">
+                <p id="modifiedTime"></p>
+                <p>Devun Durst</p>
+                <p>WDD 230 course @brighamYoungUniversityIdaho</p>
+                </div>
+            </footer>
     <p>copyright 2024 - City of Concord, California- All right reserved - Powered by <a href="https://devunfox15.github.io/">Devun Durst</a></p>
 
     <script src="./scripts/scrollingEvents.js"></script>
     <script src="./scripts/home-nav.js"></script>
     <script src="./scripts/last-modified.js"></script>
+    <script src="./scripts/timestamp.js"></script>
 </body>
 </html>

@@ -1,4 +1,12 @@
 @media only screen and (min-width: 540px) {
+    :root{
+        --background-white: rgb(240, 240, 240);
+        --color-two: rgb(207, 207, 207);
+        --color-one: black;
+        --color-three: rgb(77, 80, 87);
+        --background-color-primary: rgb(77, 161, 103);
+        --hook-green: rgb(78, 110, 93) ;
+      }
 
     header{
         margin: 0 auto;
@@ -48,16 +56,17 @@
         padding: 10px 44px; /* Adjust padding for responsiveness */
         width: auto; /* Allow the button width to adjust based on content */
         margin: 0 ; /* Add margin for spacing between buttons */
+        margin-top: 1em;
+        margin-bottom: .5em;
         text-decoration: none;
         background-color: #4d5057 ;
         color: white;
         cursor: pointer;
-        transition: transform 0.3s;
         font-size: 20pt;
+        border: 3px solid #4d5057;
     
     }
     nav ul.menu-dirrectory li a.button-design:hover, nav ul.menu-dirrectory.open li a.button-design:hover {
-        transform: scale(1.1);
         border: 3px solid white;
     }
 
@@ -67,7 +76,6 @@
         font-size: 16px;
         margin: 0;
         cursor: pointer;
-        transition: background-color 0.3s;
         list-style-type: none;
         }
 
@@ -185,9 +193,67 @@
             grid-row: 1;
            
         }
-        /* -------------------------------------here is my discover page edits ------------- */
+         /*----------- FORM --------------*/
+form{
+    width: 100%;
+  
+  }
+  .wf1 fieldset{
+    padding: .5rem 2%;
+    width: 80%;
+  }
+  
+  
+  .wf1 label {
+     text-align: center;
+     margin: 0 auto;
+  }
+  
+  .wf1 div{
+     font-size: .9rem;
+     text-align: center;
+     margin: 0 auto;
+  }
+  
+  .wf1 input[type="text"],
+  .wf1 input[type="date"],
+  .wf1 input[type="email"],
+  .wf1 input[type="number"],
+  .wf1 input[type="tel"],
+  .wf1 input[type="url"],
+  .wf1 textarea,
+  .wf1 select {
+    margin: 0 auto;
+    background-color:#eee;
+  }
+
+  .wf1 fieldset div.membership-level{
+    text-align: center;
+  }
+  .wf1 fieldset div.membership-level label{
+    text-align: left;
+    display: block;
+    width: 80%;
+}
+.wf1 fieldset div.membership-level label:nth-child(1) {
+    text-align: center;
+    width: 15em;
+    margin: 0 auto;
+    background-color: var(--hook-green);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    
 
 }
+
+.wf1 fieldset div.membership-level label {
+    text-align: left;
+}
+
+}
+        /* -------------------------------------here is my discover page edits ------------- */
+
 @media only screen and (min-width: 1235px) {
     
     #discover-grid {
@@ -250,15 +316,8 @@
         opacity: 1;
     }
 
-    img {
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    img:hover {
-        transform: scale(1.03);
-    }
     .bottom span{
         font-size: 30pt;
     }
-
+  
 }
