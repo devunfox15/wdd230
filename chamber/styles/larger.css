@@ -227,27 +227,15 @@ form{
     background-color:#eee;
   }
 
-  .wf1 fieldset div.membership-level{
-    text-align: center;
-  }
-  .wf1 fieldset div.membership-level label{
-    text-align: left;
-    display: block;
-    width: 80%;
-}
-.wf1 fieldset div.membership-level label:nth-child(1) {
-    text-align: center;
-    width: 15em;
+div.membership-level{
     margin: 0 auto;
-    background-color: var(--hook-green);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    
-
+    width: 60%;
 }
-
-.wf1 fieldset div.membership-level label {
+.membership-options {
+    display: block;
+    margin: 0 auto;
+}
+.membership-options label {
     text-align: left;
 }
 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devun Durst - WDD 230 - Web Frontend Development</title>
+  <!-- Essential META Tags -->
+  <meta name="author" content="Devun Fox Durst">
+  <meta name="description" content="WDD 230 - Web Frontend Development Devun Durst - course assignment portal">
+  <meta property="og:title" content="Devun Durst Frontend Portoflio">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://savemountdiablo.org/wp-content/uploads/2022/03/Mount-Diablo-Al-Johnson-928x522.jpg">
+  <meta property="og:url" content="https://devunfox15.github.io/wdd230/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+  <header>
+    <div class="grid_container">
+      <img class="profile-picture" src="./images/devun-durst.webp" loading="lazy" alt="A picture of the site frontend developer">
+      <span class="Homepage-Name"> Devun Durst</span>
+    </div>
+  </header>
+  <div id="mode"></div>
+  <nav>
+    <button id="myBtn"></button>
+    <ul class="menuLinks">
+      <li><a class="current-menu-item" href="./wdd230/index.html">Home</a></li>
+      <li><a class="link" href="./chamber/index.html">Chamber</a></li>
+      <li><a class="link" href="./week01/chamber-site-plan.html">Site Plan</a></li>
+      <li><a class="link" href="">Form</a></li>
+    </ul>
+    <div class="logo-container">
+      <img src="./images/dark.svg" alt="dark mode" id="darkBtn">
+    </div>
+  </nav>
+  <main>
+    <div id="formmessage"></div>
+    <h1>Form</h1>
+    <form action="thanks.html" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="keyword">Username* <input type="text" name="username" id="keyword"></label>
+        <label for="keyphrase">Your Key Phrase</label>
+        <input type="text" id="keyphrase" name="keyphrase" pattern="[a-zA-Z -]{6,}" placeholder="At least six characters long. No numbers.">
+        <label for="keyphrase2">Re-enter Your Key Phrase</label>
+        <input type="text" id="keyphrase2" name="keyphrase2">
+        <button id="btnSubmit" type="submit">Send Message</button>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <div class="footer-info">
+      <h3 id="dateTime">Javascript date</h3>
+      <h3 id="author">author of Site</h3>
+      <h3 id="country">country of author</h3>
+      <img class="usa-photo" src="./images/united-states.webp" loading="lazy" alt="flag" width="180" height="90">
+    </div>
+    <p id="modifiedTime"></p>
+  </footer>
+
+  <script src="./scripts/getDates.js"></script>
+  <script src="./scripts/darkMode.js"></script>
+  <script src="./scripts/hamburgerMenu.js"></script>
+  <script src="./scripts/getVisits.js"></script>
+  <script src="./scripts/password-manager.js"></script>
+</body>
+</html>
