@@ -491,7 +491,7 @@ form{
    margin: -1rem 2% 2rem 2%;
    width: 96%;
    max-width: 400px;
-   box-shadow: 1px 1 px 5px #999;
+   box-shadow: 1px 1px 5px #999;
    background-color:var(--hook-green);
 }
 .wf1 input:required{

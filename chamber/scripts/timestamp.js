@@ -1,13 +1,9 @@
-document.querySelector('button')
-.addEventListener('click', () =>{
-    //TODO:
-    // 1. Get the current date and time
-    // 2. Set the value of the timestamp field
-    // 3. Log the value of the timestamp field
-    // 4. Log the value of the current date and time
-    const currentDateTime = new Date().toISOString();
-    document.getElementById("timestamp").value = currentDateTime;
-    console.log(currentDateTime);
-    console.log("Value of timestamp field: " + document.getElementById("timestamp").value);
-});
-    
+function setTimestamp() {
+    var currentDate = new Date();
+    var timestamp = currentDate.toISOString(); // Convert to ISO 8601 format
+    document.getElementById("timestamp").value = timestamp;
+    console.log("Timestamp set: " + timestamp); // Log the timestamp
+  }
+  
+  // Call the setTimestamp function when the page loads
+  window.onload = setTimestamp;
