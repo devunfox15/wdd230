@@ -7,7 +7,8 @@
 }
 .photos{
   background-color: var(--hook-green);
-  height: 90em;
+  height: 65em;
+  margin-top: -1em;
 }
 
 body {
@@ -20,7 +21,7 @@ header{
     grid-template-rows: 1fr;
     background-color: var(--background-color-primary);
     position: relative;
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     color: var(--color-two);
     border: 3px solid var(--hook-green);
@@ -123,7 +124,7 @@ li {
 /* start of the main css ---------------------------------------------------------------------------------- */
 main{
   margin: 0 auto;
-  max-width: 95%;
+  max-width: 97%;
 }
 body{
   background-color: var(--background-white);
@@ -133,7 +134,7 @@ body{
   font-variant: normal;
   background-color: var(--color-one);;
   border-radius: 100%;
-  padding: 37px 0px;
+  padding: 70px 20px;
   border: 4px solid var(--background-white);
 }
 section h3{
@@ -198,13 +199,23 @@ div .text-box h3 {
 
 .about-Our-Chamber{
     background-color: var(--background-color-primary);
-    padding: 10px;
+    padding: 20px;
     margin: 0 auto;
-    width: 80%;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: bold;
+    width: 70%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.about-Our-Chamber{
+    background-color: var(--background-white);
 }
 .about-Our-Chamber-img img{
-    width: 100%;
+    width: 90%;
     max-height: fit-content;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 #calling-Action{
   margin-top: 2em;
@@ -217,7 +228,6 @@ div .text-box h3 {
   font-size: 13pt;
   text-align:center;
   padding: 50px;
-  background-color: rgba(0, 0, 0, 1);
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -263,7 +273,7 @@ footer div img{
 
 #discover{
 
-  background-color:var(--background-color-primary);
+  background-color:var(--background-white);
   color: var(--color-one);
   margin: 0 auto;
   margin-top: 1em;
@@ -294,11 +304,11 @@ footer div img{
 }
 
 #discover-grid{
-  background-color: var(--color-two);
+  background-color: var(--background-color-primary);
   color: var(--color-one);
   margin: 0 auto;
   margin-top: 1em;
-  width: 100%;
+  width: 90%;
   height: auto;
   border: 1px solid var(--color-one);
 }
@@ -311,7 +321,7 @@ footer div img{
   margin-bottom: 1em;
 }
 #discover-grid div{
-  width: 95%;
+  width: 90%;
   margin-bottom: 1em;
 }
 #discover-grid div p{
@@ -321,7 +331,8 @@ footer div img{
 }
  #discover-grid .right-side img{
   margin-top: 5px;
-  border: 2px solid var(--hook-green);
+  margin-left: 1em;
+  border: 5px solid var(--hook-green);
   background-color: var(--background-color-primary);
  }
  #discover-grid .right-side h3{
@@ -338,14 +349,14 @@ margin-right: 1em;
     margin: 0 auto;
 }
 .left-side{
-    border: 1px solid var(--color-one);
+    border: 3px solid var(--color-one);
     background-color:white;
     width: 90%;
     height:auto;
     margin: 0 auto;
 }
 .right-side{
-  border: 1px solid var(--color-one);
+  border: 3px solid var(--color-one);
   background-color:white;
   width: 90%;
   height:auto;
@@ -383,10 +394,18 @@ th {
   background-color: var(--background-white);
 }
 /*----------- FORM --------------*/
+.join-form{
+  grid-column: 1;
+  grid-row: 2;
+  background-color: var(--hook-green);
+}
+.membership-details{
+  grid-column: 1;
+  grid-row: 1;
+} 
 form{
   margin: 0 auto;
-  margin-top: 1em;
-  width: 90%;
+  margin-top: 10em;
   height: auto;
   border: 3px solid var(--color-one);
   background-color: var(--background-color-primary);
@@ -416,10 +435,10 @@ form{
    display: block;
    padding-top: 1rem; 
    color: var(--color-one);
-   font-size: .9rem;
-   text-align: left;
+   font-size: .8rem;
    width: 100%;
    margin: 0 auto;
+   text-align: left;
 }
 
 .wf1 div{
@@ -443,19 +462,15 @@ form{
    border-radius: 6px;
    padding: .75rem;
    color: #555;
-   width: 90%;
    max-width: 400px;
    background-color:var(--background-white);
    appearance: none;
-   margin: 0 auto;
 }
 .wf1 fieldset textarea#comments{
-   width: 90%;
-   max-width: 400px;
-   margin: 0 auto;
-}
-.wf1 fieldset label, .wf1 fieldset div{
-   margin: 0 auto;
+  display: block;
+  margin-left: 1.5em;
+  margin-right:1em;
+  width: 90%;
 }
 
 .wf1 fieldset div.membership-level{
@@ -493,4 +508,57 @@ form{
   margin: 0 auto;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+.wf1 fieldset label.first-label{
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.join-container{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+  height: fit-content;
+}
+.membership-details {
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto; /* Center the container */
+  padding: 40px; /* Add padding for spacing */
+  background-color: #f0f0f0; /* Container background color */
+  border-radius: 10px; /* Rounded corners for aesthetics */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  height: auto;
+}
+
+.membership-details ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+.membership-details h2{
+  margin-bottom: 2em;
+}
+.membership-details h3{
+  margin-bottom: 1em;
+  margin-top: 3em;
+}
+
+.membership-details li {
+  margin-bottom: 2em; /* Add spacing between list items */
+  font-size: 16px; /* Adjust font size as needed */
+}
+.membership-details img{
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+
+}
+
+/* Example: Color each list item differently */
+.membership-details li:nth-child(odd) {
+  background-color: #e0e0e0; /* Light gray background for odd items */
+}
+.membership-details li:nth-child(even) {
+  background-color: #d0d0d0; /* Dark gray background for even items */
 }

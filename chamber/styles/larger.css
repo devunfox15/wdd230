@@ -10,6 +10,7 @@
 
     header{
         margin: 0 auto;
+        width: 95%;
     }
     header div {
         margin: 0 auto;
@@ -194,25 +195,43 @@
            
         }
          /*----------- FORM --------------*/
-form{
-    width: 100%;
-  
-  }
+    form{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .join-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    }
+    .join-form{
+        grid-column: 1/2;
+        grid-row: 1;
+        background-color: var(--hook-green);
+       
+    }
+    .membership-details{
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
   .wf1 fieldset{
     padding: .5rem 2%;
-    width: 80%;
+    width: 40%;
   }
   
   
   .wf1 label {
-     text-align: center;
+     text-align: left;
      margin: 0 auto;
   }
   
   .wf1 div{
      font-size: .9rem;
-     text-align: center;
-     margin: 0 auto;
+     text-align: left;
   }
   
   .wf1 input[type="text"],
@@ -223,21 +242,73 @@ form{
   .wf1 input[type="url"],
   .wf1 textarea,
   .wf1 select {
-    margin: 0 auto;
     background-color:#eee;
   }
 
 div.membership-level{
+    width: 80%;
     margin: 0 auto;
-    width: 60%;
 }
 .membership-options {
     display: block;
-    margin: 0 auto;
 }
 .membership-options label {
     text-align: left;
 }
+.wf1 legend {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.wf1 fieldset label.first-label{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+  .membership-details {
+    width: 80%; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 40px; /* Add padding for spacing */
+    background-color: #f0f0f0; /* Container background color */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    height: auto;
+  }
+  
+  .membership-details ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+  }
+  .membership-details h2{
+    margin-bottom: 2em;
+  }
+  .membership-details h3{
+    margin-bottom: 1em;
+    margin-top: 5em;
+  }
+  
+  .membership-details li {
+    margin-top: 1em;
+    margin-bottom: 2em; /* Add spacing between list items */
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  .membership-details img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+    margin-top: 1em;
+  
+  }
+  
+  /* Example: Color each list item differently */
+  .membership-details li:nth-child(odd) {
+    background-color: #e0e0e0; /* Light gray background for odd items */
+  }
+  .membership-details li:nth-child(even) {
+    background-color: #d0d0d0; /* Dark gray background for even items */
+  }
+  
 
 }
         /* -------------------------------------here is my discover page edits ------------- */
@@ -249,9 +320,9 @@ div.membership-level{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         margin: 0 auto;
-        color: #4D5057;
         width: fit-content;
         height: auto;
+        background-color: var(--background-color-primary);
     }
 
     #discover-grid .top {
@@ -265,6 +336,7 @@ div.membership-level{
         text-align: center;
         height: fit-content;
         margin-bottom: 3em;
+        background-color: var(--hook-green);
     }
 
     #discover-grid .left-side {
@@ -280,17 +352,24 @@ div.membership-level{
 
     #discover-grid .right-side {
         grid-column: 2/5;
+        grid-row: 2/4;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         margin: 0 auto;
-        height: fit-content;
+        
     }
     #discover-grid .right-side picture img{
         margin-top: 3em;
         border: 2px solid #4E6E5D;
         background-color: #4DA167;
     }
+    #discover-grid .right-side h3{
+        text-align: center;
+        background-color: #CFCFCF;
+       
+    }
+
     .bottom {
         margin-top: 2em;
     }
@@ -298,6 +377,23 @@ div.membership-level{
     #discover-grid h2 {
         text-align: center;
         background-color: #CFCFCF;
+    }
+    #discover-grid p {
+        text-align: center;
+        background-color: #CFCFCF;
+        font-size: 15pt;
+        line-height: 1.5;
+        padding: 10px;
+        border: 1px solid #4E6E5D;
+    }
+    #discover-grid .event-tab p {
+        text-align: center;
+        margin-top: 10%;
+        background-color: #CFCFCF;
+        font-size: 20pt;
+        line-height: 1.5;
+        padding: 30px;
+        border: 1px solid #4E6E5D;
     }
 
     .bottom:hover span {

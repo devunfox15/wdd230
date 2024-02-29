@@ -41,36 +41,11 @@
     </div>
   </nav>
   <main>
-    <div id="formmessage"></div>
-    <h1>Leave me a Rating down below:</h1>
+    <img src="./images/congradulations.jpg" alt="congradulations"  loading="lazy">
+    <h1>Thank you for your submission and feedback!</h1>
+    <h2>I appreciate your time and I am glad to hear from you.</h2>
+    <h2>Come back to visit this page soon!</h2>
 
-
-    <form action="record.html" method="get">
-        <fieldset>
-          <legend>Personal Information</legend>
-          <label for="keyword">Username* <input type="text" id="keyword" name="username" required></label>
-          <label for="password">Password* </label>
-          <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" title="Must be at least 8 characters long and contain only letters or numbers" placeholder="Password" required>
-          <label for="password-confirmed">Confirm Password* </label>
-          <input type="password" id="password-confirmed" name="password-confirmed"  title="Doesn't match the password" placeholder="Confirm Password" required>
-          <div id="passwordFeedback"></div>
-          <label for="email">Email* <input type="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" id="email" name="email" title="Please enter a valid email address" placeholder="student@byui.edu"></label>
-          <div class="rating">
-          <label for="r">Page Rating:</label>
-              <div id="rangevalue">0</div>
-              <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
-              <datalist id="rangevalues">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </datalist>
-            </div>
-          <button id="btnSubmit" type="submit">Rate me</button>
-        </fieldset>
-    </form>
   </main>
   <footer>
     <div class="footer-info">
