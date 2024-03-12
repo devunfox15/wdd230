@@ -292,3 +292,19 @@ aside {
     border-radius: 10px;
     
   }
+  /* CSS */
+/* #links-list {
+  /* Add styles to the container div if needed */
+
+
+#links-list ul {
+  list-style: none;
+  padding: 5px;
+  text-align: left;
+}
+
+#links-list li {
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}

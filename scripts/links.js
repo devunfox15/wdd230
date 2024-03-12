@@ -4,13 +4,9 @@ const linksURL = "https://devunfox15.github.io/wdd230/data/links.json";
 async function apiFetch() {
     try {
         const response = await fetch(linksURL);
-        if (response.ok) {
-            const data = await response.json();
-            // console.log(data); // this is for testing the call
-            displayResults(data);
-        } else {
-            throw Error(await response.text());
-        }
+        const data = await response.json();
+        console.log(data);
+        displayLinks(data.weeks);
     } catch (error) {
         console.log(error);
     }
@@ -18,15 +14,28 @@ async function apiFetch() {
 
 apiFetch();
 
-function displayResults(data) {
-    const links = data.links;
-    for (const link of links) {
-        const li = document.createElement("li");
-        const a = document.createElement("a");
-        a.setAttribute("href", link.url);
-        a.setAttribute("title", link.title);
-        a.textContent = link.title;
-        li.appendChild(a);
-        document.querySelector("#links-list").appendChild(li); // Changed this line
-    }
+const displayLinks = (data) => {
+    const cards = document.querySelector('#links-list'); // Assuming you have a div with id 'links-list' to append links
+    data.forEach((week) => {
+        let card = document.createElement('div');
+        let weeks = document.createElement('ul');
+
+        weeks.textContent = `Week ${week.week}:`;
+
+        week.links.forEach((link, index) => {
+            let listItem = document.createElement('li');
+            let anchor = document.createElement('a');
+            anchor.href = link.url;
+            anchor.textContent = link.title;
+            listItem.appendChild(anchor);
+            if (index < week.links.length - 1) {
+                // Add pipe character between links, except for the last one
+                listItem.appendChild(document.createTextNode(' | '));
+            }
+            weeks.appendChild(listItem);
+        });
+
+        card.appendChild(weeks);
+        cards.appendChild(card);
+    });
 }
