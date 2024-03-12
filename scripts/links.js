@@ -20,7 +20,7 @@ const displayLinks = (data) => {
         let card = document.createElement('div');
         let weeks = document.createElement('ul');
 
-        weeks.textContent = `Week ${week.week}:`;
+        weeks.textContent = `Week ${week.week}: `;
 
         week.links.forEach((link, index) => {
             let listItem = document.createElement('li');
