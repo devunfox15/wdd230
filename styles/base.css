@@ -283,3 +283,12 @@ aside {
   .footer-info{
     text-align: center;
   }
+  .weather-display{
+    text-align: center;
+    background-color: #b5c4ff;
+    font-family: 'Lato', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    
+  }
