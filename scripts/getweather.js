@@ -1,4 +1,4 @@
-// const API_KEY = 'f604ee8e49e2f6240d6998fbd1f36678';
+const API_KEY = 'f604ee8e49e2f6240d6998fbd1f36678';
 const currenttemp = document.querySelector('#current-temp');
 const weathericon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
