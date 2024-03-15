@@ -309,6 +309,51 @@ div.membership-level{
     background-color: #d0d0d0; /* Dark gray background for even items */
   }
   
+/* Member grid container */
+#memberGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 20px;
+}
+.directory li{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 20px;
+  text-align: center;
+}
+
+/* Member card styles */
+#memberGrid section {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 300px;
+  min-height: 25em;
+  margin: 0 auto;
+}
+
+
+/* Logo styles */
+#memberGrid img {
+  width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Address styles */
+#memberGrid h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Phone, email, and website styles */
+#memberGrid p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
 
 }
         /* -------------------------------------here is my discover page edits ------------- */

@@ -1,0 +1,109 @@
+{
+    "companies": [
+      {
+        "name": "Swinerton",
+        "address": "2001 Clayton Rd, Concord, CA 94520",
+        "phone": "+19256026400",
+        "website": "https://swinerton.com/",
+        "image": "./images/swinerton_logo.png",
+        "membership_level": "Bronze",
+        "industry": "Construction",
+        "company_contact": {
+          "contact_person": "David Johnson",
+          "email": "david@swinerton.com"
+        }
+      },
+      {
+        "name": "CERUS",
+        "address": "1220 Concord Ave Suite 600, Concord, CA 94520",
+        "phone": "+19252886000",
+        "website": "http://www.cerus.com/",
+        "image": "./images/cerus-logo.png",
+        "membership_level": "Gold",
+        "industry": "Biotechnology",
+        "company_contact": {
+          "contact_person": "Allen Davis",
+          "email": "AllenDavis@cersus.com"
+        }
+      },
+      {
+        "name": "BEVMO HOLDINGS, LLC",
+        "address": "1401 Willow Pass Rd #900, Concord, CA 94520",
+        "phone": "+19256096000",
+        "website": "www.bevmo.com",
+        "image": "./images/bevmo-logo.png",
+        "membership_level": "Gold",
+        "industry": "Retail",
+        "company_contact": {
+          "contact_person": "Alexis Jarvis",
+          "email": "jAlexis@bevmoholdings.com"
+        }
+      },
+      {
+        "name": "NORTHERN CALIFORNIA PIPE TRADES TRUST FUND",
+        "address": "935 Detroit Ave Suite 242A, Concord, CA 94518",
+        "phone": "+19256865880",
+        "website": "ua342.org",
+        "image": "./images/Ncptt-logo.png",
+        "membership_level": "Silver",
+        "industry": "Piping industry",
+        "company_contact": {
+          "contact_person": "jj anderson",
+          "email": "jjanderson@ua342.com"
+        }
+      },
+      {
+        "name": "WESTWOOD ELEMENTARY SCHOOL",
+        "address": "1748 West St, Concord, CA 94521",
+        "phone": "+19256854202",
+        "website": "https://westwood.mdusd.org/",
+        "image": "./images/westwood-logo.png",
+        "membership_level": "NP Membership",
+        "industry": "education",
+        "company_contact": {
+          "contact_person": "james anders",
+          "email": "jamesandern@westwoodstaff.com"
+        }
+      },
+      {
+        "name": "Biocare Medical",
+        "address": "60 Berry Dr, Pacheco, CA 94553",
+        "phone": "+19256038000",
+        "website": "biocare.net",
+        "image": "./images/biocare-logo.webp",
+        "membership_level": "Gold",
+        "industry": "Biotechnology",
+        "company_contact": {
+          "contact_person": "Luis de Luzuriaga",
+          "email": "jamesandern@westwoodstaff.com"
+        }
+      },
+      {
+        "name": "Eichleay",
+        "address": "1390 Willow Pass Road, Suite 600, Concord, CA 94520",
+        "phone": "+19256897000",
+        "website": "https://www.eichleay.com/",
+        "image": "./images/eichleay-logo.png",
+        "membership_level": "Silver",
+        "industry": "Engineering Consultant",
+        "company_contact": {
+          "contact_person": "Eliza Sonya",
+          "email": "elizasonya@eichleay.com"
+        }
+      },
+      {
+        "name": "BAY ALARM JOBS",
+        "address": "5130 Commercial Cir, Concord, CA 94520",
+        "phone": "+18006101000",
+        "website": "www.bayalarm.com",
+        "image": "./images/bayalarm-logo.webp",
+        "membership_level": "Silver",
+        "industry": "Security and Investigations",
+        "company_contact": {
+          "contact_person": "Jack Unroe",
+          "email": "jackunroe@bayalarm.com"
+        }
+      }
+
+    ]
+}
