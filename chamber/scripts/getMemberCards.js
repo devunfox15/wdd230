@@ -24,7 +24,11 @@ document.addEventListener("DOMContentLoaded", function() {
         name.textContent = company.name;
         section.appendChild(name);
 
-        // Add address
+        //add memebership type
+        const membershipType = document.createElement("p");
+        membershipType.innerHTML = "<strong>Membership Type:</strong> " + company.membership_level;
+        section.appendChild(membershipType);
+
         // Add address
         const address = document.createElement("p");
         address.innerHTML = "<strong>Address:</strong> " + company.address;
