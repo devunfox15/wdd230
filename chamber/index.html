@@ -9,22 +9,24 @@
     <meta name="description" content="Chamber of Commerece Project designed after one in my community, planned implemented, and created for a personal Project">
     <meta property="og:title" content="Devun Durst chamber site">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://savemountdiablo.org/wp-content/uploads/2022/03/Mount-Diablo-Al-Johnson-928x522.jpg">
-    <meta property="og:url" content="https://devunfox15.github.io/wdd230/">
-    
+    <meta property="og:image" content="./images/meta-image.webp">
+    <meta property="og:url" content="https://devunfox15.github.io/wdd230/chamber/index.html">
+    <!--  Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!--  Styles -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="./images/favicon.ico">
+    <!--  favicon -->
+    <link rel="icon" href="./images/favicon.webp">
 </head>
 <body>
     <header>
         <div>
-            <img class="Concord-logo" src="./images/GCCC-Logo-white.png" alt="Concord" >
-            <img class="mountain-img" src="./images/mountain-lg.webp">
+            <img class="Concord-logo" src="./images/GCCC-Logo-white.webp" alt="Concord logo text" loading="lazy" >
+            <img class="mountain-img" src="./images/mountain-lg.webp" alt="Concord logo mountain" loading="lazy">
         </div>
         <nav>
             <button id="myBtn"></button>
@@ -46,19 +48,22 @@
         </div>
         <h1>Concord Chamber of Commerce</h1>
         <div class="photos">
-        <div class="photo-frames">
+        <div class="photo-frames" id="top-frame">
+            <!-- I need to convert these photos to webp ussing the picture class -->
+
             <h3>Experiences that will change your life!</h3>
-            <img class="framed-imgs" src="./images/local-market.png" alt="opening photo 3" class="top-main-imgs" width="300" length="auto">
+                <img class="framed-imgs" src="./images/local-market.webp" alt="opening photo 3" class="top-main-imgs" width="300" length="auto" loading="lazy">
         </div>
         
-        <div class="photo-frames">
+        <div class="photo-frames" id="middle-frame">
             <h3>Tips and guidelines from other business nearby</h3>
-            <img class="framed-imgs" src="./images/support-businesses.png" alt="opening photo 2" class="top-main-imgs" width="300" length="auto">
+
+                <img class="framed-imgs" src="./images/support-businesses.webp" alt="opening photo 2" class="top-main-imgs" width="300" length="auto" loading="lazy">
         </div>
         
-        <div class="photo-frames">
+        <div class="photo-frames" id="bottom-frame" >
             <h3>Create community in Concord Chamber Today!</h3>
-            <img class="framed-imgs" src="./images/community.jpg" alt="opening photo 1" class="top-main-imgs" width="300" length="auto">
+                <img class="framed-imgs" src="./images/community.webp" alt="opening photo 1" class="top-main-imgs" width="300" length="auto" loading="lazy">
         </div>
 </div>
     <div class="underline"></div>
@@ -71,21 +76,21 @@
             <h3 id="today"></h3>
             <h2 class="date"></h2>
             <p class="forecast-temp"></p>
-            <img class="forecast-icon" src="" alt="weather-icon">
+            <img class="forecast-icon" src="" alt="weather-icon" loading="lazy">
             <p class="forecast-description"></p>
         </div>
         <div class="forecast-day">
             <h3 id="tomorrow"></h3>
             <h2 class="date"></h2>
             <p class="forecast-temp"></p>
-            <img class="forecast-icon" src="" alt="weather-icon">
+            <img class="forecast-icon" src="" alt="weather-icon" loading="lazy">
             <p class="forecast-description"></p>
         </div>
         <div class="forecast-day">
             <h3 id="dayAfterTomorrow"></h3>
             <h2 class="date"></h2>
             <p class="forecast-temp"></p>
-            <img class="forecast-icon" src="" alt="weather-icon">
+            <img class="forecast-icon" src="" alt="weather-icon" loading="lazy">
             <p class="forecast-description"></p>
         </div>
     </div>
@@ -95,7 +100,7 @@
             <p>We aim to create a climate that enables businesses to realize the benefits of increased economic activity and heightened community involvement.</p>
             <p>From the smallest enterprises to the most established corporations, the Concord Chamber of Commerce is committed to supporting our members at every stage of their journey.</p>
         </div>
-            <div class="about-Our-Chamber-img"><img src="./images/small-building.jpg" alt="building"></div>
+            <div class="about-Our-Chamber-img"><img src="./images/small-building.webp" alt="building" loading="lazy"></div>
     </div>
     <div>
         <div class="underline"></div>
@@ -129,7 +134,7 @@
     <footer>            
         <div class="resources">
             <div>
-            <img src="./images/GCCC-Logo-stacked-white.png">
+            <img src="./images/GCCC-Logo-stacked-white.webp" alt="logo" loading="lazy">
             </div>
         </div>
         <div class="foot-div">
@@ -146,5 +151,6 @@
     <script src="./scripts/getweather.js"></script>
     <script src="./scripts/getMemeberData.js"></script>
     <script src="./scripts/bannerBtn.js"></script>
+    <script src="./scripts/callingAction.js"></script>
 </body>
 </html>

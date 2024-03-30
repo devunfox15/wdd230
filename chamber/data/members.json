@@ -5,7 +5,7 @@
         "address": "2001 Clayton Rd, Concord, CA 94520",
         "phone": "+19256026400",
         "website": "https://swinerton.com/",
-        "image": "./images/swinerton_logo.png",
+        "image": "./images/swinerton_logo.webp",
         "membership_level": "Bronze",
         "industry": "Construction",
         "company_contact": {
@@ -18,7 +18,7 @@
         "address": "1220 Concord Ave Suite 600, Concord, CA 94520",
         "phone": "+19252886000",
         "website": "http://www.cerus.com/",
-        "image": "./images/cerus-logo.png",
+        "image": "./images/cerus-logo.webp",
         "membership_level": "Gold",
         "industry": "Biotechnology",
         "company_contact": {
@@ -31,7 +31,7 @@
         "address": "1401 Willow Pass Rd #900, Concord, CA 94520",
         "phone": "+19256096000",
         "website": "www.bevmo.com",
-        "image": "./images/bevmo-logo.png",
+        "image": "./images/bevmo-logo.webp",
         "membership_level": "Gold",
         "industry": "Retail",
         "company_contact": {
@@ -44,7 +44,7 @@
         "address": "935 Detroit Ave Suite 242A, Concord, CA 94518",
         "phone": "+19256865880",
         "website": "ua342.org",
-        "image": "./images/Ncptt-logo.png",
+        "image": "./images/Ncptt-logo.webp",
         "membership_level": "Silver",
         "industry": "Piping industry",
         "company_contact": {
@@ -57,7 +57,7 @@
         "address": "1748 West St, Concord, CA 94521",
         "phone": "+19256854202",
         "website": "https://westwood.mdusd.org/",
-        "image": "./images/westwood-logo.png",
+        "image": "./images/westwood-logo.webp",
         "membership_level": "NP Membership",
         "industry": "education",
         "company_contact": {
@@ -83,7 +83,7 @@
         "address": "1390 Willow Pass Road, Suite 600, Concord, CA 94520",
         "phone": "+19256897000",
         "website": "https://www.eichleay.com/",
-        "image": "./images/eichleay-logo.png",
+        "image": "./images/eichleay-logo.webp",
         "membership_level": "Silver",
         "industry": "Engineering Consultant",
         "company_contact": {

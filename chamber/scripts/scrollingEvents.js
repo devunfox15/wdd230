@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
           // Create a clickable link for each event
           const eventLink = document.createElement("a");
           eventLink.textContent = event;
-          eventLink.href = "./html/discover.html"; // Replace with your desired link
+          eventLink.href = "./discover.html"; // Replace with your desired link
     
           // Append the link to the container div
           eventContainer.appendChild(eventLink);
