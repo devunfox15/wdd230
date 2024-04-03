@@ -3,7 +3,7 @@
   --color-two: rgb(207, 207, 207);
   --color-one: rgb(77, 80, 87);
   --background-color-primary: rgb(77, 161, 103);
-  --hook-green: rgb(78, 110, 93) ;
+  --hook-green: rgb(90, 139, 94) ;
   --transparent: rgba(240, 240, 240, 0.5);
   --black: rgb(0, 0, 0);
 }
@@ -164,15 +164,16 @@ section h3{
     overflow: hidden;
     border: 1px solid var(--background-white);
     margin: 0 auto;
-    color: var(--color-two);
+    color: var(--background-white);
 }
 .event-container{
-    border: 2px solid var(--color-two); /* Border color for the colored box */
-    background-color: var(--color-two);
+    text-decoration: overline;
+    background-color: var(--background-white);
     margin-bottom: 2em; /* Spacing between events */
 }
 .event-container a {
     text-decoration: none;
+    font: 14pt;
     color: var(--background-color-primary);
  /* Text color for the clickable link */
 }

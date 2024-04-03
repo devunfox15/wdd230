@@ -5,7 +5,7 @@
       --color-one: black;
       --color-three: rgb(77, 80, 87);
       --background-color-primary: rgb(77, 161, 103);
-      --hook-green: rgb(78, 110, 93) ;
+      --hook-green: rgb(90, 139, 94) ;
     }
 
   header{
@@ -59,7 +59,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       list-style: none;
-      background-color: #4D5057 ;
   }
   
   nav ul.menu-dirrectory li a.button-design, nav ul.menu-dirrectory.open li a.button-design {
