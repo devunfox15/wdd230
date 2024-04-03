@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var banner = document.getElementById("chamberBanner");
 
   if (dayOfWeek >= 1 && dayOfWeek <= 3 && currentHour < 19) {
-    banner.style.display = "block";
+    banner.style.display = "Flex";
   } else {
     banner.style.display = "none";
   }

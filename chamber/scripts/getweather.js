@@ -1,4 +1,4 @@
-// const API_KEY = '8a79083123d8ef1d5ad73557ee563fc6';
+const API_KEY = '8a79083123d8ef1d5ad73557ee563fc6';
 const forecastDays = document.querySelectorAll('.forecast-day');
 
 const lat = 37.980013031200656;
@@ -43,7 +43,7 @@ function displayResults(data) {
         if (i === 0) {
             dayElement.querySelector('h3').textContent = 'Today';
         } else if (i === 1) {
-            dayElement.querySelector('h3').textContent = getWeekdayName(date.getDay());
+            dayElement.querySelector('h3').textContent = getWeekdayName(date.getDay() % 7);
         } else {
             dayElement.querySelector('h3').textContent = getDayAfterTomorrowName(date.getDay());
         }
@@ -65,7 +65,7 @@ function getWeekdayName(dayIndex) {
 // Function to get the day after tomorrow's weekday name
 function getDayAfterTomorrowName(dayIndex) {
     const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    return weekdays[(dayIndex + 2) % 7];
+    return weekdays[(dayIndex) % 7];
 }
 
 apiFetch();
