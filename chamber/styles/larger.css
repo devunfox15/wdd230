@@ -187,7 +187,7 @@
           display: block;
           margin-top: 1em;
           width: 30%;
-          height: 20em;
+          height: 18em;
           border: 1px solid #ccc;
           margin: 0 auto;
           color: var(--color-two);
@@ -353,6 +353,7 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 grid-gap: 20px;
 text-align: center;
+padding: 0px 80px;
 }
 
 /* Member card styles */
@@ -440,11 +441,20 @@ left: 95%;
 transform: translate(-50%, -50%);
 cursor: pointer;
 }
+
+
 }
       /* -------------------------------------here is my discover page edits ------------- */
 
 @media only screen and (min-width: 1235px) {
-  
+  .about-Our-Chamber p{
+    font-size: 16pt;
+}
+.about-Our-Chamber{
+  display: block;
+  margin: 1em auto;
+}
+
   #discover-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
