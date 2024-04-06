@@ -21,7 +21,8 @@ async function apiFetch() {
 
 function displayResults(data) {
     const dailyForecasts = data.daily;
-    for (let i = 0; i < 3; i++) {
+    // Adjusted the loop to iterate through the first 4 days
+    for (let i = 0; i < 4; i++) {
         const forecast = dailyForecasts[i];
         const dayElement = forecastDays[i];
         const tempElement = dayElement.querySelector('.forecast-temp');
@@ -29,23 +30,22 @@ function displayResults(data) {
         const descElement = dayElement.querySelector('.forecast-description');
         const dateElement = dayElement.querySelector('.date');
 
-        // Get the date from the forecast
         const date = new Date(forecast.dt * 1000);
-
-        // Get the day and month from the date object
         const day = date.getDate();
         const month = date.getMonth() + 1; 
 
-        // Display the date in the format "MM/DD"
         dateElement.textContent = `${month}/${day}`;
 
-       // Set the text content of the h3 element
         if (i === 0) {
             dayElement.querySelector('h3').textContent = 'Today';
         } else if (i === 1) {
             dayElement.querySelector('h3').textContent = getWeekdayName(date.getDay() % 7);
-        } else {
+        } else if (i === 2) { // Updated the condition to match the new iteration
             dayElement.querySelector('h3').textContent = getDayAfterTomorrowName(date.getDay());
+        } else {
+            // Here, you can define how you want to label the additional day, 
+            // for example, you could simply use the weekday name.
+            dayElement.querySelector('h3').textContent = getWeekdayName(date.getDay() % 7);
         }
 
         tempElement.textContent = `${forecast.temp.day.toFixed(0)}°F`;
