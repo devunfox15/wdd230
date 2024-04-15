@@ -440,7 +440,11 @@ left: 95%;
 transform: translate(-50%, -50%);
 cursor: pointer;
 }
-
+footer div img{
+  margin-top: 1em;
+  height: auto;
+  width: 60%;
+}
 
 }
       /* -------------------------------------here is my discover page edits ------------- */

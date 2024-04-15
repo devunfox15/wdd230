@@ -271,8 +271,8 @@ footer {
 }
 footer div img{
   margin-top: 1em;
-  height: 150px;
-  width: auto;
+  height: auto;
+  width: 90%;
 }
 
 .foot-div {
